@@ -14,7 +14,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', href: '/icon.png' }
+      { rel: 'icon', href: 'icon.png' }
     ]
   },
 
