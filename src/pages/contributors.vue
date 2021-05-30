@@ -3,7 +3,11 @@
 </template>
 <script>
   export default {
-    title: 'Meet the contributors',
+    data() {
+      return {
+        title: 'Meet the contributors'
+      }
+    },
     async asyncData({ req, isServer, params, store }) {
 
     }
