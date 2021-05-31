@@ -17,7 +17,8 @@
     data() {
       return {
         userid: 0,
-        username: ""
+        username: "",
+        joined: ""
       }
     },
     async fetch() {
