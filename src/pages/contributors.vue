@@ -19,6 +19,7 @@
           <User :user="curator.name" :bio="curator.bio" />
           <hr />
         </div>
+      a  {{ random }}
       </div>
     </div>
   </div>
@@ -29,12 +30,13 @@ export default {
     return {
       title: "Meet the contributors",
       managers: [],
-      curators: []
+      curators: [],
+      random: [],
     };
   },
   async fetch() {
     this.managers = JSON.parse(await axios.get('https://raw.githubusercontent.com/FunctionalMetatable/scrs/initial-files/src/static/managers.json') .data)
-
+    this.random = JSON.parse(this.managers)
     this.curators = await fetch('https://raw.githubusercontent.com/FunctionalMetatable/scrs/initial-files/src/static/curators.json').then(r => r.json())
   }
 };
