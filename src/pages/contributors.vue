@@ -33,7 +33,7 @@ export default {
     };
   },
   async fetch() {
-    this.managers = await fetch('https://raw.githubusercontent.com/FunctionalMetatable/scrs/initial-files/src/static/managers.json').then(r => r.json());
+    this.managers = JSON.parse(await axios.get('https://raw.githubusercontent.com/FunctionalMetatable/scrs/initial-files/src/static/managers.json'))
 
     this.curators = await fetch('https://raw.githubusercontent.com/FunctionalMetatable/scrs/initial-files/src/static/curators.json').then(r => r.json())
   }
