@@ -24,16 +24,32 @@ html {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, a, p {
+h1, h2, h3, h4, h5, h6, a, p :not(.nav-item *) {
   color: black;
 }
 
 .nav .nav-item {
   background-color: #4D97FF;
   color: white;
+  height: 50px;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-size: 55px;
+  padding: 22px 16px;
+  float: left;
 }
 
 .nav {
   background-color: #4D97FF;
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav-item :hover {
+  background-color: #0000ff;
 }
 </style>
