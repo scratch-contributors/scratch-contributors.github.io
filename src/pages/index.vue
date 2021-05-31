@@ -1,11 +1,18 @@
 <template>
   <Header />
-  <center>
-    <h1>Welcome to the new site for the Scratch Contributors!</h1>
-    <p></p>
-  </center>
+  <div class="container">
+    <center>
+      <h1>Welcome to the new site for the Scratch Contributors!</h1>
+    </center>
+  </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      title: 'Home'
+    }
+  }
+}
 </script>
