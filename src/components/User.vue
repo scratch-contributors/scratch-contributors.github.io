@@ -78,6 +78,7 @@
   .container {
     margin-bottom: 20px;
     width: 50%;
+    box-shadow: 1px block black;
   }
 
   @media only screen and (max-width: 1500px) {

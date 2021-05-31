@@ -6,7 +6,7 @@
       <h3>Managers</h3>
       <div>
         <div class="user" v-for="manager in managers">
-          <User :user="manager.name" :bio="manager.bio">
+          <User :user="manager.name" :bio="manager.bio" />
           <hr />
         </div>
       </div>
@@ -16,7 +16,7 @@
       <h3>Curators</h3>
       <div>
         <div class="user" v-for="curator in curators">
-          <User :user="curator.name" :bio="curator.bio">
+          <User :user="curator.name" :bio="curator.bio" />
           <hr />
         </div>
       </div>
