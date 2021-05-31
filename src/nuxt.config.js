@@ -4,7 +4,9 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: ((title) => title ? `${title} - Scratch Contributors` : 'Scratch Contributors'),
+    titleTemplate: (title) => {
+      return title ? `${title} - Scratch Contributors` : 'Scratch Contributors'
+    },
     htmlAttrs: {
       lang: 'en'
     },
