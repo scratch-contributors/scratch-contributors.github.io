@@ -6,7 +6,13 @@
       <h3>Managers</h3>
       <ul>
         <li v-for="manager in managers">
-          <User :user="username" />
+          <User :user="manager.name" />
+        </li>
+      </ul>
+      <h3>Curators</h3>
+      <ul>
+        <li v-for="curator in curators">
+          <User :user="curator.name" />
         </li>
       </ul>
   </div>
@@ -24,14 +30,6 @@
       let manRes = await fetch(`https://raw.githubusercontent.com/FunctionalMetatable/scrs/initial-files/src/static/managers.json`);
 
       let manJson = await manRes.json();
-
-      for (let j in manJson) {
-        let man = manJson[j]
-        let scratchRes = await fetch(`https://api.scratch.mit.edu/users/${man.name}`)
-        let scratchJson = await scratchRes.json()
-
-        manJson[j].id = scratchJson.id;
-      }
 
       this.managers = manJson;
 

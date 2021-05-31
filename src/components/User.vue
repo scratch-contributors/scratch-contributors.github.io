@@ -1,8 +1,8 @@
 <template>
   <div class="user">
     <p>{{ username }}</p>
-    <img src="`https://cdn2.scratch.mit.edu/get_image/user/${username}_50x50.png`" />
-    <OcularStatus :user="`${username}`" />
+    <img :src="`https://cdn2.scratch.mit.edu/get_image/user/${username}_50x50.png`" />
+    <OcularStatus :user="username" />
   </div>
 </template>
 <script>

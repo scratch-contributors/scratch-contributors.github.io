@@ -1,6 +1,7 @@
 <template>
-  <i class="ocular-status"> {{ ocular.status }}
-    <span class="ocular-color" style="`background-color:${ocular.color}`"></span>
+  <i class="ocular-status"> 
+    {{ ocular.status }}
+    <span class="ocular-color" :style="`background-color:${ocular.color}`"></span>
   </i>
 </template>
 <script>
