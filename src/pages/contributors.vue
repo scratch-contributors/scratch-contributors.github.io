@@ -21,27 +21,20 @@
         </template>
       </div>
   </div>
-  </div>
 </template>
 <script>
 export default {
   data() {
     return {
-      title: "Meet the contributors"
+      title: "Meet the contributors",
+      managers: [],
+      curators: []
     };
   },
   async fetch() {
-    let manRes = await fetch(`https://raw.githubusercontent.com/FunctionalMetatable/scrs/initial-files/src/static/managers.json`);
+    this.managers = await fetch('https://raw.githubusercontent.com/FunctionalMetatable/scrs/initial-files/src/static/managers.json').then(r => r.json());
 
-    let manJson = await manRes.json();
-
-    this.managers = manJson;
-
-    let curRes = await fetch(`https://raw.githubusercontent.com/FunctionalMetatable/scrs/initial-files/src/static/curators.json`);
-
-    let curJson = await curRes.json();
-
-    this.curators = curJson;
+    this.curators = await fetch(`https://raw.githubusercontent.com/FunctionalMetatable/scrs/initial-files/src/static/curators.json').then(r => r.json())
   }
 };
 </script>
