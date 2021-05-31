@@ -5,20 +5,20 @@
       <h1 style="color: black;">Contributors</h1>
       <h3>Managers</h3>
       <div>
-        <div class="user" v-for="manager in managers" :key="manager.name">
+        <template v-for="manager in managers" :key="manager.name">
           <User :user="manager.name" :bio="manager.bio" />
           <hr />
-        </div>
+        </template>
       </div>
       <br />
       <br />
       <br />
       <h3>Curators</h3>
       <div>
-        <div class="user" v-for="curator in curators" :key="curator.name">
+        <template v-for="curator in curators" :key="curator.name">
           <User :user="curator.name" :bio="curator.bio" />
           <hr />
-        </div>
+        </templates>
       </div>
   </div>
   </div>
