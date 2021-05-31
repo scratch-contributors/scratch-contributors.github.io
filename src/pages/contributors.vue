@@ -6,23 +6,20 @@
       <h3>Managers</h3>
       <ul>
         <div class="user" v-for="manager in managers">
-          <User :user="manager.name" />
+          <User :user="manager.name" :bio="manager.bio">
           <hr />
         </div>
       </ul>
       <h3>Curators</h3>
       <ul>
         <div class="user" v-for="curator in curators">
-          <User :user="curator.name" />
+          <User :user="curator.name" :bio="curator.bio">
           <hr />
         </div>
       </ul>
   </div>
 </template>
 <script>
-  import managers from '~/static/managers.json'
-  import curators from '~/static/curators.json'
-  
   export default {
     data() {
       return {
@@ -32,11 +29,15 @@
       }
     },
     async fetch() {
-      let manJson = JSON.parse(managers)
+      let manRes = await fetch(`https://raw.githubusercontent.com/FunctionalMetatable/scrs/initial-files/src/static/managers.json`);
+
+      let manJson = await manRes.json();
 
       this.managers = manJson;
 
-      let curJson = JSON.parse(curators)
+      let curRes = await fetch(`https://raw.githubusercontent.com/FunctionalMetatable/scrs/initial-files/src/static/curators.json`);
+
+      let curJson = await curRes.json();
 
       this.curators = curJson;
     }

@@ -1,5 +1,7 @@
 # src
 The source code of the website.
+## Prerequisites
+You will need [Node.js](https://nodejs.org) and [npm](https://npmjs.org).
 
 ## Build Setup
 

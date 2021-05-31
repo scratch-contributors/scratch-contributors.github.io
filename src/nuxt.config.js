@@ -5,7 +5,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: (titleChunk) => {
-      return titleChunk ? `${titleChunk} - Scratch Contributors` : 'Scratch Contributors'
+      return `${titleChunk} - Scratch Contributors`
     },
     htmlAttrs: {
       lang: 'en'
@@ -16,7 +16,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', href: '/icon.png' }
+      { rel: 'icon', href: '/scrs/icon.png' }
     ]
   },
 
