@@ -1,3 +1,4 @@
+var _console = console;
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -5,7 +6,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: (titleChunk) => {
-      return `${titleChunk} - Scratch Contributors`
+      return titleChunk ? `${titleChunk} - Scratch Contributors` : "Scratch Contributors"
     },
     htmlAttrs: {
       lang: 'en'

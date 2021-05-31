@@ -52,7 +52,7 @@
     white-space: nowrap;
     overflow: hidden;
     color: white;
-    height: 18.5px;
+    height: 25px;
   }
   .left {
     float: left;
