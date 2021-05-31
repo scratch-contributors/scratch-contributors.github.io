@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6, a, p :not(.nav-item *) {
   color: black;
 }
 
-.nav .nav-item {
+.nav .nav-item:not(.img) {
   background-color: #4D97FF;
   color: white;
   height: 50px;
@@ -50,6 +50,17 @@ h1, h2, h3, h4, h5, h6, a, p :not(.nav-item *) {
 }
 
 .nav-item :hover {
-  background-color: #0000ff;
+  background-color: #4588E5;
+}
+
+.nav .nav-item.img {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-size: 55px;
+  padding: 0px 0px;
+  float: left;
+  background-color: #151618;
 }
 </style>

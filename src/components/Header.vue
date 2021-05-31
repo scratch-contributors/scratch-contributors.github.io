@@ -1,6 +1,6 @@
 <template>
   <div class="nav">
-    <div class="nav-item">
+    <div class="nav-item img">
       <NuxtLink to="/">
         <img src="/icon.png" width="50px" height="50px">
       </NuxtLink>
