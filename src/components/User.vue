@@ -11,9 +11,11 @@
       </div>
 
       <div class="left">
-        <img :src="`https://cdn2.scratch.mit.edu/get_image/user/${userid}_90x90.png`" class="pfp" />
-        <a :href="`https://scratch.mit.edu/users/${username}`" class="username">{{ username }}</a>
-        <OcularStatus :user="this.user" />
+        <center>
+          <img :src="`https://cdn2.scratch.mit.edu/get_image/user/${userid}_90x90.png`" class="pfp" />
+          <a :href="`https://scratch.mit.edu/users/${username}`" class="username">{{ username }}</a>
+          <OcularStatus :user="this.user" />
+        </center>
       </div>
 
     </div>
@@ -45,11 +47,12 @@
   header {
     background-color: #4D97FF;
     border-radius: 10px 10px 0px 0px;
-    padding: 10px;
+    padding: 5px;
     font-weight: 700;
     white-space: nowrap;
     overflow: hidden;
     color: white;
+    height: 18.5px;
   }
   .left {
     float: left;
@@ -64,7 +67,7 @@
     flex: 0 0 auto;
   }
 
-  .main-content, .main-sidebar, .main-nav {
+  .content, .left {
     padding: 0.75em 1em;
     overflow-wrap: break-word;
   }

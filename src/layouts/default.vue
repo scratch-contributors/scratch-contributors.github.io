@@ -33,4 +33,8 @@ html, body {
 * {
   box-sizing: border-box;
 }
+
+NuxtLink, a {
+  text-decoration: none;
+}
 </style>
