@@ -1,8 +1,10 @@
 <template>
-  <i class="ocular-status"> 
+  <div class="container">
+    <i class="ocular-status" title="This is an ocular status. You can set yours at ocular.jeffalo.net/dashboard."> 
     {{ ocular.status }}
+    </i>
     <span class="ocular-color" :style="`background-color:${ocular.color}`"></span>
-  </i>
+  </div>
 </template>
 <script>
   export default {
@@ -29,5 +31,8 @@
   background-color: rgb(32, 116, 57);
   border-radius: 50%;
   display: inline-block;
+}
+.container {
+  display: block;
 }
 </style>

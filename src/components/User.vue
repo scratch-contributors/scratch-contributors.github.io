@@ -5,7 +5,7 @@
     </header>
     <div class="left">
       <img :src="`https://cdn2.scratch.mit.edu/get_image/user/${userid}_50x50.png`" />
-      <p>{{ username }}</p>
+      <a :href="`https://scratch.mit.edu/users/${username}`">{{ username }}</a>
       <OcularStatus :user="this.user" />
     </div>
     <div class="right">
@@ -35,10 +35,15 @@
   }
 </script>
 <style scoped>
+  /* some styling elements taken from ocular, thanks jeffalo */
   header {
     background-color: #4D97FF;
     border-radius: 50px 50px 0px 0px;
-    padding-left: 10%;
+    padding: 10px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    color: white;
   }
   .left {
     float: left;
@@ -47,5 +52,7 @@
   .right {
     float: right;
     width: 69%;
+    padding: .75em 1em;
+    box-shadow: inset 1px 0 #e0e0e0;
   }
 </style>

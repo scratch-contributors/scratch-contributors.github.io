@@ -10,6 +10,9 @@
           <hr />
         </div>
       </ul>
+      <br />
+      <br />
+      <br />
       <h3>Curators</h3>
       <ul>
         <div class="user" v-for="curator in curators">
