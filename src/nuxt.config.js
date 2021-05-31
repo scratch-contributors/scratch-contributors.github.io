@@ -4,8 +4,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: (title) => {
-      return title ? `${title} - Scratch Contributors` : 'Scratch Contributors'
+    titleTemplate: (titleChunk) => {
+      return titleChunk ? `${titleChunk} - Scratch Contributors` : 'Scratch Contributors'
     },
     htmlAttrs: {
       lang: 'en'
@@ -38,13 +38,10 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    '@nuxtjs/redirect-module'
-  ],
+  modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  },
+  build: {},
 
   loading: {
     color: 'blue',
@@ -57,9 +54,5 @@ export default {
 
   router: {
     base: '/scrs/'
-  },
-
-  redirect: [
-    { from: '^/c', to: '/contributors'}
-  ]
+  }
 }

@@ -1,6 +1,6 @@
 <template>
-  <Header />
   <div class="container">
+    <Header />
     <center>
       <h1>Welcome to the new site for the Scratch Contributors!</h1>
     </center>
