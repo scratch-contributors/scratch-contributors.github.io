@@ -41,7 +41,6 @@ NuxtLink {
   text-align: center;
   text-decoration: none;
   text-size: 55px;
-  padding: 22px 16px;
   float: left;
 }
 
@@ -58,8 +57,13 @@ NuxtLink {
   background-color: #4588e5;
 }
 
-.nav-item NuxtLink :hover {
+.nav-item NuxtLink, a :hover {
   background-color: #4588e5;
+}
+
+.nav-item a, NuxtLink { 
+  padding: 30px 10px 30px 10px; 
+  transition-duration: 0.1s; 
 }
 
 .nav .nav-item.img {
