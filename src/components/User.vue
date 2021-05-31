@@ -1,14 +1,16 @@
 <template>
-  <header>
-    <p>Joined at {{ joined }}</p>
-  </header>
-  <div class="left">
-    <img :src="`https://cdn2.scratch.mit.edu/get_image/user/${userid}_50x50.png`" />
-    <p>{{ username }}</p>
-    <OcularStatus :user="this.user" />
-  </div>
-  <div class="right">
-    <Bio :bio="bio" />
+  <div class="container">
+    <header>
+      <p>Joined at {{ joined }}</p>
+    </header>
+    <div class="left">
+      <img :src="`https://cdn2.scratch.mit.edu/get_image/user/${userid}_50x50.png`" />
+      <p>{{ username }}</p>
+      <OcularStatus :user="this.user" />
+    </div>
+    <div class="right">
+      {{ bio }}
+    </div>
   </div>
 </template>
 <script>
