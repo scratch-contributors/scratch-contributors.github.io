@@ -21,6 +21,7 @@
       }
     },
     async fetch() {
+      console.log(`Fetching => ${this.user}`)
       let scratchRes = await fetch(`https://api.scratch.mit.edu/users/${this.user}`);
       let scratchJson = await scratchRes.json();
 
@@ -34,6 +35,7 @@
   header {
     background-color: #4D97FF;
     border-radius: 50px 50px 0px 0px;
+    padding-left: 10%;
   }
   .left {
     float: left;
