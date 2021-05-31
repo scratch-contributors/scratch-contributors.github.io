@@ -74,6 +74,13 @@
 
   .container {
     margin-bottom: 20px;
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 1500px) {
+    .container {
+      width: 90%;
+    }
   }
 
   .pfp {
