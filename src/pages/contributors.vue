@@ -4,22 +4,22 @@
     <div class="margined">
       <h1 style="color: black;">Contributors</h1>
       <h3>Managers</h3>
-      <ul>
+      <div>
         <div class="user" v-for="manager in managers">
           <User :user="manager.name" :bio="manager.bio">
           <hr />
         </div>
-      </ul>
+      </div>
       <br />
       <br />
       <br />
       <h3>Curators</h3>
-      <ul>
+      <div>
         <div class="user" v-for="curator in curators">
           <User :user="curator.name" :bio="curator.bio">
           <hr />
         </div>
-      </ul>
+      </div>
   </div>
 </template>
 <script>

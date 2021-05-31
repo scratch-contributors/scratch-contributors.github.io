@@ -47,12 +47,16 @@
   }
   .left {
     float: left;
-    width: 30%;
+    width: 15%;
   }
   .right {
     float: right;
-    width: 69%;
+    width: 85%;
     padding: .75em 1em;
     box-shadow: inset 1px 0 #e0e0e0;
+    flex: 0 0 auto;
+  }
+  .container {
+    margin-bottom: 20px;
   }
 </style>

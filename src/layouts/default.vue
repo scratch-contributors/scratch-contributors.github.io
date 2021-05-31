@@ -29,4 +29,8 @@ html, body {
 .margined {
   margin-left: 22.5px;
 }
+
+* {
+  box-sizing: border-box;
+}
 </style>

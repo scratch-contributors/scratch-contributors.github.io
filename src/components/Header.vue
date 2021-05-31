@@ -19,8 +19,9 @@
 </script>
 
 <style scoped>
-h1, h2, h3, h4, h5, h6, a, p :not(.nav-item *) {
+h1, h2, h3, h4, h5, h6, a, p :not(.nav-item *), NuxtLink {
   color: black;
+  text-decoration: none;
 }
 
 .nav .nav-item:not(.img) {
