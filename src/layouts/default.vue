@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <Nuxt />
-  </div>
+  <Header />
+  <Nuxt />
 </template>
 
 <style>
@@ -51,6 +50,10 @@ h1, h2, h3, h4, h5, h6, a, p :not(.nav-item *) {
 }
 
 .nav-item :hover {
+  background-color: #4588E5;
+}
+
+.nav-item NuxtLink :hover {
   background-color: #4588E5;
 }
 
