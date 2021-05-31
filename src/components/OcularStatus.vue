@@ -1,17 +1,19 @@
 <template>
   <i class="ocular-status"> {{ ocular.status }}
-    <span class="ocular-color" :style="background-color:${ocular.color}"></span>
+    <span class="ocular-color" style="`background-color:${ocular.color}`"></span>
   </i>
 </template>
 <script>
   export default {
     props: ["user"],
     data() {
-      ocular: {status: "", color: ""}
+      return {
+        ocular: {status: "", color: ""}
+      }
     },
     async fetch() {
-      let res = await fetch(`https://my-ocular.jeffalo.net/api/user/${this.user}`)
-      let ocular = await res.json()
+      let res = await fetch(`https://my-ocular.jeffalo.net/api/user/${this.user}`);
+      let ocular = await res.json();
 
       this.ocular = ocular
     },
