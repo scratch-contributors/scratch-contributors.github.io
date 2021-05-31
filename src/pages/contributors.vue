@@ -18,7 +18,7 @@
         <template v-for="curator in curators" :key="curator.name">
           <User :user="curator.name" :bio="curator.bio" />
           <hr />
-        </templates>
+        </template>
       </div>
   </div>
   </div>
