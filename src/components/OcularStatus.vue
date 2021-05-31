@@ -7,21 +7,23 @@
   </div>
 </template>
 <script>
-  export default {
-    props: ["user"],
-    data() {
-      return {
-        ocular: {status: "", color: ""}
-      }
-    },
-    async fetch() {
-      let res = await fetch(`https://my-ocular.jeffalo.net/api/user/${this.user}`);
-      let ocular = await res.json();
+export default {
+  props: ["user"],
+  data() {
+    return {
+      ocular: { status: "", color: "" }
+    };
+  },
+  async fetch() {
+    let res = await fetch(
+      `https://my-ocular.jeffalo.net/api/user/${this.user}`
+    );
+    let ocular = await res.json();
 
-      this.ocular = ocular
-    },
-    fetchOnServer: false
-  }
+    this.ocular = ocular;
+  },
+  fetchOnServer: false
+};
 </script>
 <style>
 .ocular-color {

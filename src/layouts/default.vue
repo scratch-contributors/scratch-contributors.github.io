@@ -5,16 +5,10 @@
 </template>
 
 <style>
-html, body {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+html,
+body {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   color: black;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -34,7 +28,8 @@ html, body {
   box-sizing: border-box;
 }
 
-NuxtLink, a {
+NuxtLink,
+a {
   text-decoration: none;
 }
 </style>

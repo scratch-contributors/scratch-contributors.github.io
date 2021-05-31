@@ -15,17 +15,25 @@
 </template>
 
 <script>
-  export default {}
+export default {};
 </script>
 
 <style scoped>
-h1, h2, h3, h4, h5, h6, a, p :not(.nav-item *), NuxtLink {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p :not(.nav-item *),
+NuxtLink {
   color: black;
   text-decoration: none;
 }
 
 .nav .nav-item:not(.img) {
-  background-color: #4D97FF;
+  background-color: #4d97ff;
   color: white;
   height: 65px;
   display: block;
@@ -38,7 +46,7 @@ h1, h2, h3, h4, h5, h6, a, p :not(.nav-item *), NuxtLink {
 }
 
 .nav {
-  background-color: #4D97FF;
+  background-color: #4d97ff;
   margin: 0;
   list-style-type: none;
   padding: 0;
@@ -47,11 +55,11 @@ h1, h2, h3, h4, h5, h6, a, p :not(.nav-item *), NuxtLink {
 }
 
 .nav-item :hover {
-  background-color: #4588E5;
+  background-color: #4588e5;
 }
 
 .nav-item NuxtLink :hover {
-  background-color: #4588E5;
+  background-color: #4588e5;
 }
 
 .nav .nav-item.img {

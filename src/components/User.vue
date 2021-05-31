@@ -26,90 +26,91 @@
   </div>
 </template>
 <script>
-  export default {
-    props: ["user", "bio"],
-    data() {
-      return {
-        userid: 0,
-        username: "",
-        joined: ""
-      }
-    },
-    async fetch() {
-      let scratchRes = await fetch(`https://api.scratch.mit.edu/users/${this.user}`);
-      let scratchJson = await scratchRes.json();
+export default {
+  props: ["user", "bio"],
+  data() {
+    return {
+      userid: 0,
+      username: "",
+      joined: ""
+    };
+  },
+  async fetch() {
+    let scratchRes = await fetch(
+      `https://api.scratch.mit.edu/users/${this.user}`
+    );
+    let scratchJson = await scratchRes.json();
 
-      this.userid = scratchJson.id;
-      this.username = scratchJson.username;
-      this.joined = (new Date(scratchJson.history.joined)).toString()
-    }
+    this.userid = scratchJson.id;
+    this.username = scratchJson.username;
+    this.joined = new Date(scratchJson.history.joined).toString();
   }
+};
 </script>
 <style scoped>
-  /* some styling elements taken from ocular, thanks jeffalo */
-  header {
-    background-color: #4D97FF;
-    border-radius: 10px 10px 0px 0px;
-    padding: 5px;
-    font-weight: 700;
-    white-space: nowrap;
-    overflow: hidden;
-    color: white;
-    height: 35px;
-  }
-  .left {
-    float: left;
-    width: 15%;
-    order: 1;
-    flex: 0 0 auto;
-  }
-  .right {
-    float: right;
-    width: 85%;
-    box-shadow: inset 1px 0 #e0e0e0;
-    flex: 0 0 auto;
-  }
+/* some styling elements taken from ocular, thanks jeffalo */
+header {
+  background-color: #4d97ff;
+  border-radius: 10px 10px 0px 0px;
+  padding: 5px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  color: white;
+  height: 29px;
+}
+.left {
+  float: left;
+  width: 15%;
+  order: 1;
+  flex: 0 0 auto;
+}
+.right {
+  float: right;
+  width: 85%;
+  box-shadow: inset 1px 0 #e0e0e0;
+  flex: 0 0 auto;
+}
 
-  .content, .left {
-    padding: 0.75em 1em;
-    overflow-wrap: break-word;
-  }
+.content,
+.left {
+  padding: 0.75em 1em;
+  overflow-wrap: break-word;
+}
 
+.container {
+  margin-bottom: 20px;
+  width: 67.5%;
+  box-shadow: 1px block black;
+}
+
+@media only screen and (max-width: 1500px) {
   .container {
-    margin-bottom: 20px;
-    width: 50%;
-    box-shadow: 1px block black;
+    width: 90%;
   }
+}
 
-  @media only screen and (max-width: 1500px) {
-    .container {
-      width: 90%;
-    }
-  }
+.pfp {
+  width: 90px;
+  height: 90px;
+}
 
-  .pfp {
-    width: 90px;
-    height: 90px;
-  }
+.wrap {
+  display: flex;
+  border-left: none;
+}
 
-  .wrap {
-    display: flex;
-    border-left: none;
-  }
+.right {
+  order: 2;
+  width: 85%;
+  background: var(--background);
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+}
 
-  .right {
-    order: 2;
-    width: 85%;
-    background: var(--background);
-    overflow: hidden;
-    display: flex;
-    flex-flow: row wrap;
-  }
-
-  .content {
-    display: block;
-    width: 100%;
-  }
-
-
+.content {
+  display: block;
+  width: 100%;
+}
 </style>
