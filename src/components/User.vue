@@ -6,18 +6,22 @@
     <div class="wrap">
       <div class="right">
         <div class="content">
-          {{ bio }}
+          <p>{{ bio }}</p>
         </div>
       </div>
 
       <div class="left">
         <center>
-          <img :src="`https://cdn2.scratch.mit.edu/get_image/user/${userid}_90x90.png`" class="pfp" />
-          <a :href="`https://scratch.mit.edu/users/${username}`" class="username">{{ username }}</a>
+          <a :href="`https://scratch.mit.edu/users/${username}`" class="username">
+            <img :src="`https://cdn2.scratch.mit.edu/get_image/user/${userid}_90x90.png`" class="pfp" />
+            <br />
+            <p>
+              {{ username }}
+            </p>
+          </a>
           <OcularStatus :user="this.user" />
         </center>
       </div>
-
     </div>
   </div>
 </template>
@@ -32,7 +36,6 @@
       }
     },
     async fetch() {
-      console.log(`Fetching => ${this.user}`)
       let scratchRes = await fetch(`https://api.scratch.mit.edu/users/${this.user}`);
       let scratchJson = await scratchRes.json();
 
@@ -52,7 +55,7 @@
     white-space: nowrap;
     overflow: hidden;
     color: white;
-    height: 25px;
+    height: 35px;
   }
   .left {
     float: left;
