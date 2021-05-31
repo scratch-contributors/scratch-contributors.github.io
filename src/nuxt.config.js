@@ -39,6 +39,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/redirect-module'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -56,5 +57,9 @@ export default {
 
   router: {
     base: '/scrs/'
-  }
+  },
+
+  redirect: [
+    { from: '^/c', to: '/contributors'}
+  ]
 }
