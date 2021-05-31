@@ -1,8 +1,8 @@
 <template>
   <div class="user">
     <p>{{ username }}</p>
-    <img :src="`https://cdn2.scratch.mit.edu/get_image/user/${username}_50x50.png`" />
-    <OcularStatus :user="username" />
+    <img :src="`https://cdn2.scratch.mit.edu/get_image/user/${userid}_50x50.png`" />
+    <OcularStatus :user="this.user" />
   </div>
 </template>
 <script>
@@ -10,7 +10,8 @@
     props: ["user"],
     data() {
       return {
-        userid: 0
+        userid: 0,
+        username: ""
       }
     },
     async fetch() {
