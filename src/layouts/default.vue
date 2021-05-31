@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6, a, p :not(.nav-item *) {
 .nav .nav-item:not(.img) {
   background-color: #4D97FF;
   color: white;
-  height: 50px;
+  height: 65px;
   display: block;
   color: white;
   text-align: center;
@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6, a, p :not(.nav-item *) {
   list-style-type: none;
   padding: 0;
   overflow: hidden;
+  height: 65px;
 }
 
 .nav-item :hover {
