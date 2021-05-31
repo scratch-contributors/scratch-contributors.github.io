@@ -6,8 +6,7 @@
       <h3>Managers</h3>
       <ul>
         <li v-for="manager in managers">
-          <img src="`https://cdn2.scratch.mit.edu/get_image/user/${manager.id}_50x50.png`" />
-          {{ manager.name }}
+          <User :user="username" />
         </li>
       </ul>
   </div>
