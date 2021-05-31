@@ -30,6 +30,7 @@ h1, h2, h3, h4, h5, h6, a, p {
 
 .nav .nav-item {
   background-color: #4D97FF;
+  color: white;
 }
 
 .nav {
