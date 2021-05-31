@@ -31,7 +31,7 @@ export default {
       title: "Meet the contributors",
       managers: [],
       curators: [],
-      random: [],
+      random: 'sus',
     };
   },
   async fetch() {
