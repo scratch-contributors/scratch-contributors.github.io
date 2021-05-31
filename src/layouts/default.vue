@@ -22,5 +22,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  margin: 0;
+}
+
+.margined {
+  margin-left: 22.5px;
 }
 </style>
