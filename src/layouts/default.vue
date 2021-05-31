@@ -5,7 +5,7 @@
 </template>
 
 <style>
-html {
+html, body {
   font-family:
     'Source Sans Pro',
     -apple-system,
