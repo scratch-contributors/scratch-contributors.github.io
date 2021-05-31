@@ -20,7 +20,9 @@
   </div>
 </template>
 <script>
-  const fs = require('fs')
+  import managers from '~/static/managers.json'
+  import curators from '~/static/curators.json'
+  
   export default {
     data() {
       return {
@@ -30,11 +32,11 @@
       }
     },
     async fetch() {
-      let manJson = JSON.parse(fs.readFileSync('../static/managers.json', 'utf8'))
+      let manJson = JSON.parse(managers)
 
       this.managers = manJson;
 
-      let curJson = JSON.parse(fs.readFileSync('../static/curators.json', 'utf8'))
+      let curJson = JSON.parse(curators)
 
       this.curators = curJson;
     }
