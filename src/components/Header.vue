@@ -2,7 +2,7 @@
   <div class="nav">
     <div class="nav-item logo">
       <NuxtLink to="/">
-        <img src="/icon.png" width="50px" height="50px">
+        <img src="/scrs/icon.png" />
       </NuxtLink>
     </div>
     <div class="nav-item">
@@ -34,6 +34,12 @@ h1, h2, h3, h4, h5, h6, p {
   text-size: 55px;
 }
 
+.nav .nav-item span {
+  color: white;
+  text-decoration: none;
+  text-weight: bold;
+}
+
 .nav {
   background-color: #4d97ff;
   margin: 0;
@@ -52,8 +58,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .nav-item a, NuxtLink { 
-  padding: 30px 10px 30px 10px; 
-  padding: 22px 16px;
+  padding: 30px 10px 30px 10px;
   transition-duration: 0.1s; 
 }
 
