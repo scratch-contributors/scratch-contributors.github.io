@@ -114,6 +114,7 @@ export default {
         {
           name: "bobcat0701",
           bio: "Why hello there I'm bobcat0701! I edit the wiki, add to pptbf, and help out on the forums. I use the he/him pronouns. I love to to help on scratch because I also do so irl. my cats and I thank everyone who helps out on scratch!"
+        }
       ] // ⏫ is the list of curators. You shouldn't be touching stuff after this unless you know what you're doing 
     };
   }
