@@ -14,7 +14,7 @@
     methods: {
       switchTheme() {
         let currentTheme = this.$colorMode.preference;
-        let themes = ['system']
+        let themes = ['system', 'dark']
         let to = themes[themes.indexOf(currentTheme) + 1]
         this.$colorMode.preference = to || 'system'
       }
