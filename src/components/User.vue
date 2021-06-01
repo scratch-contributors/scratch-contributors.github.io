@@ -2,7 +2,7 @@
 <template>
   <div class="container">
     <div class="header">
-      <a :href="`https://scratchstats.com/${user}`" class="date">{{ new Date(joined).toLocaleDateString("en-US") + ' - ' + new Date(joined).toLocaleTimeString("en-US") }}</a>
+      <a :href="`https://scratchstats.com/${user}`" class="date">Joined Scratch at {{ new Date(joined).toLocaleDateString("en-US") + ' - ' + new Date(joined).toLocaleTimeString("en-US") }}</a>
     </div>
     <div class="wrap">
       <section class="main-content">
@@ -14,9 +14,9 @@
         </div>
       </section>
       <nav class="left-nav">
-        <a href="`https://scratch.mit.edu/users/${username}`" class="username">{{ username }}</a>
+        <a :href="`https://scratch.mit.edu/users/${username}`" class="username">{{ username }}</a>
         <br />
-        <img :src="`https://cdn2.scratch.mit.edu/get_image/user/${userid}_90x90.png`" class="pfp" />
+        <a :href="`https://scratch.mit.edu/users/${username}`"><img :src="`https://cdn2.scratch.mit.edu/get_image/user/${userid}_90x90.png`" class="pfp" /></a>
         <OcularStatus :user="this.user" />
       </nav>
     </div>
