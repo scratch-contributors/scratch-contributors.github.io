@@ -75,12 +75,16 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .nav .nav-item.logo img {
-  width: 100px;
-  height: 99.999px;
+  width: 64px;
+  height: 64px;
   background-color: #4588e5;
 }
 
 .nav .nav-item {
+  transition-duration: 0.1s; 
+}
+
+.nav .nav-item * {
   transition-duration: 0.1s; 
 }
 </style>
