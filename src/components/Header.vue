@@ -2,7 +2,7 @@
   <div class="nav">
     <div class="nav-item logo">
       <NuxtLink to="/">
-        <img src="/scrs/icon.png" />
+        <img src="/icon.png" />
       </NuxtLink>
     </div>
     <div class="nav-item">
