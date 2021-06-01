@@ -51,13 +51,13 @@ export default {
 /* some styling elements taken from ocular, thanks jeffalo */
 header {
   background-color: #4d97ff;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 2px 2px 0px 0px;
   padding: 5px;
   font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
   color: white;
-  height: 29px;
+  height: auto;
 }
 .left {
   float: left;
