@@ -1,12 +1,12 @@
 <template>
   <div class="nav">
-    <div class="nav-item img">
+    <div class="nav-item logo">
       <NuxtLink to="/">
         <img src="/icon.png" width="50px" height="50px">
       </NuxtLink>
     </div>
     <div class="nav-item">
-      <NuxtLink to="/contributors">Contributors</NuxtLink>
+      <NuxtLink to="/contributors"><span>Contributors</span></NuxtLink>
     </div>
     <div class="nav-item">
       <a href="https://scratch.mit.edu/studios/26371714">Scratch Studio</a>
@@ -19,29 +19,19 @@ export default {};
 </script>
 
 <style scoped>
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-p :not(.nav-item *),
-NuxtLink {
+h1, h2, h3, h4, h5, h6, p {
   color: black;
   text-decoration: none;
 }
 
-.nav .nav-item:not(.img) {
+.nav .nav-item:not(.logo) {
   background-color: #4d97ff;
   color: white;
-  height: 65px;
+  height: 99.9px;
   display: block;
-  color: white;
   text-align: center;
   text-decoration: none;
   text-size: 55px;
-  float: left;
 }
 
 .nav {
@@ -50,7 +40,7 @@ NuxtLink {
   list-style-type: none;
   padding: 0;
   overflow: hidden;
-  height: 65px;
+  height: 100px;
 }
 
 .nav-item :hover {
@@ -67,7 +57,7 @@ NuxtLink {
   transition-duration: 0.1s; 
 }
 
-.nav .nav-item.img {
+.nav .nav-item.logo {
   display: block;
   color: white;
   text-align: center;
@@ -76,5 +66,10 @@ NuxtLink {
   padding: 0px 0px;
   float: left;
   background-color: #151618;
+}
+
+.nav .nav-item.logo img {
+  width: 100px;
+  height: 99.999px;
 }
 </style>
