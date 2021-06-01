@@ -17,7 +17,7 @@ export default {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" }
     ],
-    link: [{ rel: "icon", href: "/scrs/icon.png" }]
+    link: [{ rel: "icon", href: "/icon.png" }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
