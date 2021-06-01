@@ -2,8 +2,7 @@
 <template>
   <div class="container">
     <div class="header">
-      <a :href="`https://scratchstats.com/${user}`" class="date full">{{ new Date(joined) }}</a>
-      <a :href="`https://scratchstats.com/${user}`" class="date mobile">{{ new Date(joined).toLocaleDateString("en-US") + ' - ' + new Date(joined).toLocaleTimeString("en-US") }}</a>
+      <a :href="`https://scratchstats.com/${user}`" class="date">{{ new Date(joined).toLocaleDateString("en-US") + ' - ' + new Date(joined).toLocaleTimeString("en-US") }}</a>
       <a :href="`https://ocular.jeffalo.net/user/${user}`" class="viewon ocular">view on ocular</a> |
       <a :href="`https://postpercent.rirurin.com/users/${user}`" class="viewon postpercent">view on postpercent</a>
     </div>
