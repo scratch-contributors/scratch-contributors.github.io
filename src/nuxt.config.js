@@ -31,7 +31,9 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
+  buildModules: [
+    '@nuxtjs/color-mode'
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
@@ -50,5 +52,16 @@ export default {
 
   router: {
     base: "/scrs/"
+  },
+
+  colorMode: {
+    preference: 'system',
+    fallback: 'light',
+    hid: 'nuxt-color-mode-script',
+    globalName: '__NUXT_COLOR_MODE__',
+    componentName: 'ColorScheme',
+    classPrefix: '',
+    classSuffix: '-mode',
+    storageKey: 'nuxt-color-mode'
   }
 };

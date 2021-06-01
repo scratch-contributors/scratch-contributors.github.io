@@ -5,7 +5,7 @@
 </template>
 
 <style>
-html {
+.light-mode {
   --sidebar-border: #e0e0e0;
   --background: #fffdd0;
   --sidebar-background: #f2f2f2;
@@ -13,6 +13,16 @@ html {
   --brand: #4D97FF;
   --text: #575e75;
 }
+
+.dark-mode {
+  --sidebar-border: #9B9A9A;
+  --background: #94937B;
+  --sidebar-background: #787474;
+  --sidebar-border: #817A7A;
+  --brand: #657995;
+  --text: #43495C;
+}
+
 html,
 body {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
