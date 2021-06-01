@@ -9,7 +9,7 @@
       <NuxtLink to="/contributors">Contributors</NuxtLink>
     </div>
     <div class="nav-item">
-      <a href="https://scratch.mit.edu/studios/26371714">Scratch Studio</a>
+      <a href="https://scratch.mit.edu/studios/26371714" target="_blank">Scratch Studio</a>
     </div>
   </div>
 </template>
