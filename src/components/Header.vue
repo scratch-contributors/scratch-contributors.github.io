@@ -63,6 +63,7 @@ NuxtLink {
 
 .nav-item a, NuxtLink { 
   padding: 30px 10px 30px 10px; 
+  padding: 22px 16px;
   transition-duration: 0.1s; 
 }
 
