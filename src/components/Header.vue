@@ -6,7 +6,7 @@
       </NuxtLink>
     </div>
     <div class="nav-item">
-      <NuxtLink to="/contributors"><span>Contributors</span></NuxtLink>
+      <NuxtLink to="/contributors">Contributors</NuxtLink>
     </div>
     <div class="nav-item">
       <a href="https://scratch.mit.edu/studios/26371714">Scratch Studio</a>
@@ -32,9 +32,10 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center;
   text-decoration: none;
   text-size: 55px;
+  float: right;
 }
 
-.nav .nav-item span {
+.nav-item NuxtLink, .nav-item a {
   color: white;
   text-decoration: none;
   text-weight: bold;
@@ -59,7 +60,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .nav-item a, .nav-item NuxtLink { 
-  padding: 30px 10px 30px 10px;
+  padding: 22px 16px;
   transition-duration: 0.1s; 
 }
 
@@ -79,6 +80,8 @@ h1, h2, h3, h4, h5, h6, p {
   height: 64px;
   background-color: #4588e5;
 }
+
+.nav .nav-item.logo {width: 64px; height: 64px;}
 
 .nav .nav-item {
   transition-duration: 0.1s; 
