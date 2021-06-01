@@ -62,6 +62,7 @@ header {
 .left {
   float: left;
   min-width: 15%;
+  max-width: 20%;
   order: 1;
   flex: 0 0 auto;
 }
