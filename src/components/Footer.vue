@@ -1,8 +1,11 @@
 <template>
+  <br />
+  <br />
+  <hr />
   <footer>
     This site was proudly made by <a href="https://github.com/scratch-contributors/scratch-contributors.github.io/graphs/contributors">these scratchers</a>.
     Credit to <a href="https://jeffalo.net">Jeffalo</a> and <a href="https://theforumhelpers.github.io">The Forum Helpers</a> site for inspiration and data.
-    <a class="link" @click="switchTheme()">switch theme (current: {{ $colorMode.preference }})</a>
+    <a class="link" @onclick="switchTheme()" href="#">switch theme (current: {{ $colorMode.preference }})</a>
   </footer>
 </template>
 <script>

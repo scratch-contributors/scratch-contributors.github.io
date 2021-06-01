@@ -33,6 +33,7 @@ h1, h2, h3, h4, h5, h6, p {
   text-decoration: none;
   text-size: 55px;
   float: right;
+  padding: 15px 5px 5px 10px;
 }
 
 .nav-item NuxtLink, .nav-item a {
