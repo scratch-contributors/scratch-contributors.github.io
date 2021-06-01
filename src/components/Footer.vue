@@ -27,7 +27,8 @@
 </script>
 <style scoped>
   button.link {
-    border: none;
+    border: 1px black;
+    padding: 5px;
     background: none;
     cursor: pointer;
     font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
