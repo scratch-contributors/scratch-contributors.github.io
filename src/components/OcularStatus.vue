@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <i class="ocular-status" title="This is an ocular status. You can set yours at ocular.jeffalo.net/dashboard."> 
+    <i class="ocular-status" title="This is an ocular status. You can set yours at ocular.jeffalo.net/dashboard." v-if="ocular.status"> 
     {{ ocular.status }}
     </i>
-    <span class="ocular-color" :style="`background-color:${ocular.color}`"></span>
+    <span class="ocular-color" :style="`background-color:${ocular.color}`" v-if="ocular.color"></span>
   </div>
 </template>
 <script>
