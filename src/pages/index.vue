@@ -2,7 +2,7 @@
   <div class="container">
     <Header />
     <div class="margined">
-      <center>
+      <div>
         <h1>Welcome to the new site for the Scratch Contributors!</h1>
         <p>We are a studio on <a href="https://scratch.mit.edu/">Scratch</a> that celebrates everybody who has contributed to scratch! This includes:</p>
         <ul>
@@ -39,7 +39,7 @@
           </li>
           <li>.. and more! Check the <a href="https://scratch.mit.edu/studios/26371714/">studio description</a> for the whole list!</li>
         </ul>
-      </center>
+      </div>
     </div>
     <Footer />
   </div>
