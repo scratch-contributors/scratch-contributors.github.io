@@ -5,7 +5,7 @@
 </template>
 
 <style>
-:root {
+html {
   --sidebar-border: #e0e0e0;
   --background: #fffdd0;
   --sidebar-background: #f2f2f2;
