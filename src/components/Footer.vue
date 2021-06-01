@@ -1,11 +1,12 @@
 <template>
-  <footer>
+  <footer class="margined">
     <br />
     <br />
     <hr />
-    This site was proudly made by <a href="https://github.com/scratch-contributors/scratch-contributors.github.io/graphs/contributors">these scratchers</a>.
+    This site was proudly made by <a href="https://github.com/scratch-contributors/scratch-contributors.github.io/graphs/contributors">these scratchers</a>.</a>
     Credit to <a href="https://jeffalo.net">Jeffalo</a> and <a href="https://theforumhelpers.github.io">The Forum Helpers</a> site for inspiration and data.
-    <a class="link" @onclick="switchTheme()" href="#">switch theme (current: {{ $colorMode.preference }})</a>
+    <br />
+    <button class="link" @click="switchTheme()" href="#">switch theme (current: {{ $colorMode.preference }})</button>
   </footer>
 </template>
 <script>
@@ -20,3 +21,5 @@
     }
   }
 </script>
+<style scoped>
+</style>

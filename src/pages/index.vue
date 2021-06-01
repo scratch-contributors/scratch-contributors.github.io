@@ -1,16 +1,18 @@
 <template>
   <div class="container">
     <Header />
-    <center>
-      <h1>Welcome to the new site for the Scratch Contributors!</h1>
-    </center>
+    <div class="margined">
+      <center>
+        <h1>Welcome to the new site for the Scratch Contributors!</h1>
+      </center>
+    </div>
     <Footer />
   </div>
 </template>
 
 <script>
 export default {
-  data() {
+  head() {
     return {
       title: "Home"
     };

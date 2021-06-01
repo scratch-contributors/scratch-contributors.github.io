@@ -30,9 +30,13 @@
 </template>
 <script>
 export default {
+  head() {
+    return {
+      title: 'Meet the contributors!'
+    }
+  },
   data() {
     return {
-      title: "Meet the contributors",
       managers: [ // ⏬ is the list of managers. Only touch the below if you're adding/changing a manager
         {
           name: "wangat",
