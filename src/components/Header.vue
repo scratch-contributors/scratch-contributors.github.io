@@ -51,16 +51,16 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100%;
 }
 
-.nav-item :hover {
+.nav-item:not(.logo) :hover {
   background-color: #4588e5;
 }
 
-.nav-item NuxtLink, .nav-item a :hover {
+.nav-item:not(.logo) NuxtLink, .nav-item:not(.logo) a :hover {
   background-color: #4588e5;
 }
 
 .nav-item a, .nav-item NuxtLink { 
-  padding: 22px 16px;
+  padding: 43px 16px;
   transition-duration: 0.1s; 
 }
 
