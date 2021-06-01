@@ -75,7 +75,7 @@ export default {
         },
         {
           name: "AmazingMech2418",
-          bio: "Hi, I'm Mech! I help out on the open-source code end of Scratch through GitHub. I contribute here because I enjoy programming and this gives me a way to contribute to Scratch and program in JavaScript at the same time! Though, the Scratch Team does get mad when I submit pull requests for issues that don't say "help wanted'. XD Though, I have had a pull request merged before in scratch-vm, which is what determines how Scratch runs projects. I also am helping the Scratch Team with a security feature I am working on at the request of @Paddle2See. I still do need to do a few more things before this can get rolled out, but it should be coming soon, and might even help repeal the Browser Extensions/Userscript Policy (or at least parts of it) while still maintaining security."
+          bio: "Hi, I'm Mech! I help out on the open-source code end of Scratch through GitHub. I contribute here because I enjoy programming and this gives me a way to contribute to Scratch and program in JavaScript at the same time! Though, the Scratch Team does get mad when I submit pull requests for issues that don't say 'help wanted'. XD Though, I have had a pull request merged before in scratch-vm, which is what determines how Scratch runs projects. I also am helping the Scratch Team with a security feature I am working on at the request of @Paddle2See. I still do need to do a few more things before this can get rolled out, but it should be coming soon, and might even help repeal the Browser Extensions/Userscript Policy (or at least parts of it) while still maintaining security."
         },
         {
           name: "leahcimto",
