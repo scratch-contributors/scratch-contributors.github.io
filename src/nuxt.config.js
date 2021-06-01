@@ -49,10 +49,6 @@ export default {
     fallback: "404.html"
   },
 
-  router: {
-    base: "/scrs/"
-  },
-
   colorMode: {
     preference: 'system',
     fallback: 'light',
