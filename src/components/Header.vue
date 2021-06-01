@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6, p {
 .nav .nav-item:not(.logo) {
   background-color: #4d97ff;
   color: white;
-  height: 99.9px;
+  height: 64px;
   display: block;
   text-align: center;
   text-decoration: none;
@@ -46,19 +46,19 @@ h1, h2, h3, h4, h5, h6, p {
   list-style-type: none;
   padding: 0;
   overflow: hidden;
-  height: 100px;
-  width: auto;
+  height: 64px;
+  width: 100%;
 }
 
 .nav-item :hover {
   background-color: #4588e5;
 }
 
-.nav-item NuxtLink, a :hover {
+.nav-item NuxtLink, .nav-item a :hover {
   background-color: #4588e5;
 }
 
-.nav-item a, NuxtLink { 
+.nav-item a, .nav-item NuxtLink { 
   padding: 30px 10px 30px 10px;
   transition-duration: 0.1s; 
 }
@@ -78,5 +78,9 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100px;
   height: 99.999px;
   background-color: #4588e5;
+}
+
+.nav .nav-item {
+  transition-duration: 0.1s; 
 }
 </style>
