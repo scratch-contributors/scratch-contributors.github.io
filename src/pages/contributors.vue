@@ -6,7 +6,9 @@
       <h3>Managers</h3>
       <div>
         <div v-for="manager in managers" :key="manager.name">
+          <br />
           <User :user="manager.name" :bio="manager.bio" />
+          <br />
           <hr />
         </div>
       </div>
@@ -16,7 +18,9 @@
       <h3>Curators</h3>
       <div>
         <div v-for="curator in curators" :key="curator.name">
+          <br />
           <User :user="curator.name" :bio="curator.bio" />
+          <br />
           <hr />
         </div>
       </div>
@@ -28,7 +32,7 @@ export default {
   data() {
     return {
       title: "Meet the contributors",
-      managers: [
+      managers: [ // ⏬ is the list of managers. Only touch the below if you're adding/changing a manager
         {
           name: "wangat",
           bio: "Hi! I'm wangat! I contribute in many places, as an Scratch Welcoming Committee Reviewer, Scratch Design Studio Helper, The Forum Helpers Curator, Scratch Wiki Contributor, Propose Projects to be Featured Curator, and Front Page Curator Application Help Curator. I contribute because I like helping Scratch a better place! I'm also 13, male, a Ravenclaw, and know some HTML. You can usually find me on the forums, the SDS, and SWC! :D",
@@ -54,7 +58,9 @@ export default {
           bio: "Hi there! My name is CleverComment, but you can call me Clev or CC or Clever. XD  I contribute by helping in the FPCA and FPCAH studios and being a Scratch Camp counselor in 2020.  I like contributing because it's awesome! I love helping other people. I'm actually from New Zealand!",
         },
       ],
-      curators: []
+      curators: [ // ⏬ is the list of curators. Only touch the below if you're adding/changing/promoting a curator
+        
+      ] // ⏫ is the list of curators. You shouldn't be touching stuff after this unless you know what you're doing 
     };
   }
 };
