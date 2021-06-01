@@ -87,7 +87,6 @@ export default {
   text-align: right;
   display: block;
   width: 100%;
-  background-color: white;
 }
 
 .header {
@@ -105,7 +104,7 @@ export default {
 }
 .viewon {
   float: right;
-  color: white;
+  color: var(--text);
   text-decoration: none;
 }
 .topic-link {

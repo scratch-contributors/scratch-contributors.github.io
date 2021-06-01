@@ -3,10 +3,14 @@
     <br />
     <br />
     <hr />
-    This site was proudly made by <a href="https://github.com/scratch-contributors/scratch-contributors.github.io/graphs/contributors">these scratchers</a>.</a>
-    Credit to <a href="https://jeffalo.net">Jeffalo</a> and <a href="https://theforumhelpers.github.io">The Forum Helpers</a> site for inspiration and data.
+    <p>This site was proudly made by <a href="https://github.com/scratch-contributors/scratch-contributors.github.io/graphs/contributors">these scratchers</a>.</a></p>
+    <br />
+    <p>Credit to <a href="https://jeffalo.net">Jeffalo</a> and <a href="https://theforumhelpers.github.io">The Forum Helpers</a> site for inspiration and data.</p>
     <br />
     <button class="link" @click="switchTheme()" href="#">switch theme (current: {{ $colorMode.preference }})</button>
+    <br />
+    <br />
+    <br />
   </footer>
 </template>
 <script>
@@ -22,4 +26,5 @@
   }
 </script>
 <style scoped>
+
 </style>

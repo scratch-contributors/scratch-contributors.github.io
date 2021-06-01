@@ -36,6 +36,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   text-decoration: none;
+  background-color: var(--background);
 }
 
 .margined {

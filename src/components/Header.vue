@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .nav .nav-item:not(.logo) {
-  background-color: #4d97ff;
+  background-color: var(--brand);
   color: white;
   height: 64px;
   display: block;
@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .nav {
-  background-color: #4d97ff;
+  background-color: var(--brand);
   margin: 0;
   list-style-type: none;
   padding: 0;
@@ -53,11 +53,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .nav-item:not(.logo) :hover {
-  background-color: #4588e5;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .nav-item:not(.logo) NuxtLink, .nav-item:not(.logo) a :hover {
-  background-color: #4588e5;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .nav-item a, .nav-item NuxtLink { 
