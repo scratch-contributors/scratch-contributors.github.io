@@ -5,6 +5,14 @@
 </template>
 
 <style>
+:root {
+  --sidebar-border: #e0e0e0;
+  --background: #fffdd0;
+  --sidebar-background: #f2f2f2;
+  --sidebar-border: #e0e0e0;
+  --brand: #4D97FF;
+  --text: #575e75;
+}
 html,
 body {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
