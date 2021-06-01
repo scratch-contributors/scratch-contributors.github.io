@@ -15,6 +15,7 @@
       </section>
       <nav class="left-nav">
         <a href="`https://scratch.mit.edu/users/${username}`" class="username">{{ username }}</a>
+        <br />
         <img :src="`https://cdn2.scratch.mit.edu/get_image/user/${userid}_90x90.png`" class="pfp" />
         <OcularStatus :user="this.user" />
       </nav>
@@ -88,6 +89,8 @@ export default {
   text-align: right;
   display: block;
   width: 100%;
+  background-color: white;
+  color: lightblue;
 }
 
 .header {
