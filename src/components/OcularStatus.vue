@@ -37,4 +37,8 @@ export default {
 .container {
   display: block;
 }
+i {
+  text-overflow: ellipsis;
+  width: 10px;
+}
 </style>
