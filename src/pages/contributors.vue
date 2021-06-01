@@ -2,7 +2,7 @@
   <div class="container">
     <Header />
     <div class="margined">
-      <h1 style="color: black">Contributors</h1>
+      <h1>Contributors</h1>
       <h3>Managers</h3>
       <div>
         <div v-for="manager in managers" :key="manager.name">
