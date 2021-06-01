@@ -1,0 +1,22 @@
+name: Mark stale issues and pull requests
+
+on:
+  schedule:
+  - cron: "30 1 * * *"
+
+jobs:
+  stale:
+
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+    - uses: actions/stale@v3
+      with:
+        repo-token: ${{ secrets.GH_PAT }}
+        stale-issue-message: 'It looks like this issue is stale. Thus, it has been marked with the stale label and may be closed in a few days if it remains inactive.'
+        stale-pr-message: 'Stale pull request message'
+        stale-issue-label: 'stale'
+        stale-pr-label: 'stale'
