@@ -3,6 +3,7 @@
   <div class="container">
     <div class="header">
       <a :href="`https://scratchstats.com/${user}`" class="date">Joined Scratch at {{ new Date(joined).toLocaleDateString("en-US") + ' - ' + new Date(joined).toLocaleTimeString("en-US") }}</a>
+      <p class="viewon"><a :href="`https://ocular.jeffalo.net/user/${user}`" class="viewon ocular">ocular</a> / <a :href="`https://postpercent.rirurin.com/users/${user}`" class="viewon postpercent">postpercent</a></p>
     </div>
     <div class="wrap">
       <section class="main-content">
@@ -17,7 +18,7 @@
         <br />
         <a :href="`https://scratch.mit.edu/users/${username}`"><img :src="`https://cdn2.scratch.mit.edu/get_image/user/${userid}_90x90.png`" class="pfp" /></a>
         <OcularStatus :user="this.user" />
-        <p><a :href="`https://ocular.jeffalo.net/user/${user}`" class="viewon ocular">ocular</a><br /><a :href="`https://postpercent.rirurin.com/users/${user}`" class="viewon postpercent">postpercent</a></p>
+        
       </nav>
     </div>
   </div>
