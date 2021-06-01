@@ -51,5 +51,7 @@ body {
 NuxtLink,
 a {
   text-decoration: none;
+  text-weight: bold;
+  text-color: lightblue;
 }
 </style>
