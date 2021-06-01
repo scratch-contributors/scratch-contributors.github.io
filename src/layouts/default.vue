@@ -16,18 +16,18 @@
 
 .dark-mode {
   --sidebar-border: #9B9A9A;
-  --background: #94937B;
+  --background: #111111;
   --sidebar-background: #787474;
   --sidebar-border: #817A7A;
   --brand: #657995;
-  --text: #43495C;
+  --text: white;
 }
 
 html,
 body {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: black;
+  color: var(--text);
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -37,6 +37,7 @@ body {
   margin: 0;
   text-decoration: none;
   background-color: var(--background);
+  transition-duration: 0.1s; 
 }
 
 .margined {
