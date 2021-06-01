@@ -28,9 +28,10 @@
 <style scoped>
   button.link {
     border: none;
-    background-color: none;
+    background: none;
     cursor: pointer;
     font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
   }
 </style>
