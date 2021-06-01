@@ -10,7 +10,6 @@
           {{ bio }}
         </div>
         <div class="footer">
-          <p><a :href="`https://ocular.jeffalo.net/user/${user}`" class="viewon ocular">view on ocular</a>   |   <a :href="`https://postpercent.rirurin.com/users/${user}`" class="viewon postpercent">view on postpercent</a></p>
         </div>
       </section>
       <nav class="left-nav">
@@ -18,6 +17,7 @@
         <br />
         <a :href="`https://scratch.mit.edu/users/${username}`"><img :src="`https://cdn2.scratch.mit.edu/get_image/user/${userid}_90x90.png`" class="pfp" /></a>
         <OcularStatus :user="this.user" />
+        <p><a :href="`https://ocular.jeffalo.net/user/${user}`" class="viewon ocular">ocular</a> | <a :href="`https://postpercent.rirurin.com/users/${user}`" class="viewon postpercent">postpercent</a></p>
       </nav>
     </div>
   </div>
@@ -88,7 +88,6 @@ export default {
   display: block;
   width: 100%;
   background-color: white;
-  color: lightblue;
 }
 
 .header {
