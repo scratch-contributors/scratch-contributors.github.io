@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #4588e5;
 }
 
-.nav .nav-item.logo {width: 64px; height: 64px;}
+.nav .nav-item.logo {width: 64px; height: 64px; margin-left: -16px;}
 
 .nav .nav-item {
   transition-duration: 0.1s; 
