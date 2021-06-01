@@ -14,7 +14,7 @@
         </div>
       </section>
       <nav class="left-nav">
-        <a href="`https://scratch.mit.edu/users/${username}`">{{ username }}</a>
+        <a href="`https://scratch.mit.edu/users/${username}`" class="username">{{ username }}</a>
         <img :src="`https://cdn2.scratch.mit.edu/get_image/user/${userid}_90x90.png`" class="pfp" />
         <OcularStatus :user="this.user" />
       </nav>
