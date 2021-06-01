@@ -1,27 +1,24 @@
+<!-- Most of this is taken from https://github.com/jeffalo/ocular/blob/main/components/Post.vue -->
 <template>
   <div class="container">
-    <header>
-      <p>Joined Scratch at {{ joined }}</p>
-    </header>
+    <div class="header">
+      <a :href="`https://scratchstats.com/${user}`" class="date full">{{ new Date(joined) }}</a>
+      <a :href="`https://scratchstats.com/${user}`" class="date mobile">{{ new Date(joined).toLocaleDateString("en-US") + ' - ' + new Date(joined).toLocaleTimeString("en-US") }}</a>
+      <a :href="`https://ocular.jeffalo.net/user/${user}`" class="viewon ocular">view on ocular</a> |
+      <a :href="`https://postpercent.rirurin.com/users/${user}`" class="viewon postpercent">view on postpercent</a>
+    </div>
     <div class="wrap">
-      <div class="right">
+      <section class="main-content">
         <div class="content">
-          <p>{{ bio }}</p>
+          {{ bio }}
         </div>
-      </div>
-
-      <div class="left">
-        <center>
-          <a :href="`https://scratch.mit.edu/users/${username}`" class="username">
-            <img :src="`https://cdn2.scratch.mit.edu/get_image/user/${userid}_90x90.png`" class="pfp" />
-            <br />
-            <p>
-              {{ username }}
-            </p>
-          </a>
-          <OcularStatus :user="this.user" />
-        </center>
-      </div>
+        <div class="footer"></div>
+      </section>
+      <nav class="left-nav">
+        <a href="`https://scratch.mit.edu/users/${username}`">{{ username }}</a>
+        <img :src="`https://cdn2.scratch.mit.edu/get_image/user/${userid}_90x90.png`" class="pfp" />
+        <OcularStatus :user="this.user" />
+      </nav>
     </div>
   </div>
 </template>
@@ -40,68 +37,23 @@ export default {
       `https://api.scratch.mit.edu/users/${this.user}`
     );
     let scratchJson = await scratchRes.json();
-
     this.userid = scratchJson.id;
     this.username = scratchJson.username;
-    this.joined = new Date(scratchJson.history.joined).toString();
+    this.joined = scratchJson.history.joined
   }
 };
 </script>
+
 <style scoped>
-/* some styling elements taken from ocular, thanks jeffalo */
-header {
-  background-color: #4d97ff;
-  border-radius: 2px 2px 0px 0px;
-  padding: 5px;
-  font-weight: 700;
-  white-space: nowrap;
-  overflow: hidden;
-  color: white;
-  height: auto;
-}
-.left {
-  float: left;
-  min-width: 15%;
-  max-width: 20%;
-  order: 1;
-  flex: 0 0 auto;
-}
-.right {
-  float: right;
-  width: 85%;
-  box-shadow: inset 1px 0 #e0e0e0;
-  flex: 0 0 auto;
-}
-
-.content,
-.left {
-  padding: 0.75em 1em;
-  overflow-wrap: break-word;
-}
-
 .container {
   margin-bottom: 20px;
-  width: 67.5%;
-  box-shadow: 1px block black;
 }
-
-@media only screen and (max-width: 1500px) {
-  .container {
-    width: 90%;
-  }
-}
-
-.pfp {
-  width: 90px;
-  height: 90px;
-}
-
 .wrap {
   display: flex;
+  border: 1px solid var(--sidebar-border);
   border-left: none;
 }
-
-.right {
+.main-content {
   order: 2;
   width: 85%;
   background: var(--background);
@@ -109,9 +61,77 @@ header {
   display: flex;
   flex-flow: row wrap;
 }
-
 .content {
   display: block;
   width: 100%;
+}
+.left-nav {
+  order: 1;
+  width: 15%;
+  flex: 0 0 auto;
+  background: var(--sidebar-background);
+}
+.main-content,
+.main-sidebar,
+.left-nav {
+  padding: 0.75em 1em;
+  box-shadow: inset 1px 0 var(--sidebar-border);
+  overflow-wrap: break-word;
+}
+.pfp {
+  width: 90px;
+  height: 90px;
+}
+.footer {
+  line-height: 28px;
+  padding-top: 2em;
+  align-self: flex-end;
+  text-align: right;
+  display: block;
+  width: 100%;
+}
+
+.header {
+  background-color: var(--brand);
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.rank {
+  display: block;
+}
+.viewon {
+  float: right;
+  color: white;
+  text-decoration: none;
+}
+.topic-link {
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+}
+.topic {
+  float: right;
+  color: white;
+  text-decoration: none;
+}
+.username {
+  color: var(--text);
+  font-weight: bold;
+  padding-bottom: 5px;
+  display: block;
+}
+@media only screen and (max-width: 750px) {
+  .pfp {
+    width: 75%;
+    height: auto;
+  }
+  .left-nav {
+    width: 20%;
+  }
 }
 </style>
