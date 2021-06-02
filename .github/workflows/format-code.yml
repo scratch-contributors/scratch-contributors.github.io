@@ -1,0 +1,40 @@
+name: Format code using Prettier
+on: [ push, pull_request ]
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node_version: 14.x
+        
+      - name: Install Prettier
+        run: npm install -g prettier
+        
+      - name: Format code
+        run: npx prettier --write .
+        
+      - name: Commit changed files (in main repository)
+        if: github.repository_owner == 'scratch-contributors'
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: format code
+          commit_user_name: scratchcontributors-bot
+          commit_user_email: scratchcontributors-bot@users.noreply.github.com
+          commit_author: scratchcontributors-bot <scratchcontributors-bot@users.noreply.github.com>
+       
+      - name: Commit changed files (outside main repository)
+        if: github.repository_owner != 'scratch-contributors'
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: format code
+        
+        
