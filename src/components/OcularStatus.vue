@@ -1,9 +1,17 @@
 <template>
   <div class="container">
-    <i class="ocular-status" title="This is an ocular status. You can set yours at ocular.jeffalo.net/dashboard." v-if="ocular.status"> 
-    {{ ocular.status }}
+    <i
+      class="ocular-status"
+      title="This is an ocular status. You can set yours at ocular.jeffalo.net/dashboard."
+      v-if="ocular.status"
+    >
+      {{ ocular.status }}
     </i>
-    <span class="ocular-color" :style="`background-color:${ocular.color}`" v-if="ocular.color"></span>
+    <span
+      class="ocular-color"
+      :style="`background-color:${ocular.color}`"
+      v-if="ocular.color"
+    ></span>
   </div>
 </template>
 <script>
@@ -11,7 +19,7 @@ export default {
   props: ["user"],
   data() {
     return {
-      ocular: { status: "", color: "" }
+      ocular: { status: "", color: "" },
     };
   },
   async fetch() {
@@ -22,7 +30,7 @@ export default {
 
     this.ocular = ocular;
   },
-  fetchOnServer: false
+  fetchOnServer: false,
 };
 </script>
 <style>

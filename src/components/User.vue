@@ -2,20 +2,34 @@
 <template>
   <div class="container">
     <div class="header">
-      <a :href="`https://scratchstats.com/${user}`" class="date">Joined Scratch at {{ new Date(joined).toLocaleDateString("en-US") + ' - ' + new Date(joined).toLocaleTimeString("en-US") }}</a>
+      <a :href="`https://scratchstats.com/${user}`" class="date"
+        >Joined Scratch at
+        {{
+          new Date(joined).toLocaleDateString("en-US") +
+          " - " +
+          new Date(joined).toLocaleTimeString("en-US")
+        }}</a
+      >
     </div>
     <div class="wrap">
       <section class="main-content">
         <div class="content">
           {{ bio }}
         </div>
-        <div class="footer">
-        </div>
+        <div class="footer"></div>
       </section>
       <nav class="left-nav">
-        <a :href="`https://scratch.mit.edu/users/${username}`" class="username">{{ username }}</a>
+        <a
+          :href="`https://scratch.mit.edu/users/${username}`"
+          class="username"
+          >{{ username }}</a
+        >
         <br />
-        <a :href="`https://scratch.mit.edu/users/${username}`"><img :src="`https://cdn2.scratch.mit.edu/get_image/user/${userid}_90x90.png`" class="pfp" /></a>
+        <a :href="`https://scratch.mit.edu/users/${username}`"
+          ><img
+            :src="`https://cdn2.scratch.mit.edu/get_image/user/${userid}_90x90.png`"
+            class="pfp"
+        /></a>
         <OcularStatus :user="this.user" />
       </nav>
     </div>
@@ -28,16 +42,18 @@ export default {
     return {
       userid: 0,
       username: "",
-      joined: ""
+      joined: "",
     };
   },
   async fetch() {
-    let scratchRes = await fetch(`https://api.scratch.mit.edu/users/${this.user}`);
+    let scratchRes = await fetch(
+      `https://api.scratch.mit.edu/users/${this.user}`
+    );
     let scratchJson = await scratchRes.json();
     this.userid = scratchJson.id;
     this.username = scratchJson.username;
-    this.joined = scratchJson.history.joined
-  }
+    this.joined = scratchJson.history.joined;
+  },
 };
 </script>
 
