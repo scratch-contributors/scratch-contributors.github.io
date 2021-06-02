@@ -3,7 +3,7 @@
     <br />
     <br />
     <hr />
-    <p>This site was proudly made by <a href="https://github.com/scratch-contributors/scratch-contributors.github.io/graphs/contributors">these scratchers</a>.</a></p>
+    <p>This site was proudly made by <a href="https://github.com/scratch-contributors/scratch-contributors.github.io/graphs/contributors">these scratchers</a>.</p>
     <br />
     <p>Credit to <a href="https://jeffalo.net">Jeffalo</a> and <a href="https://theforumhelpers.github.io">The Forum Helpers</a> site for inspiration and data.</p>
     <br />
