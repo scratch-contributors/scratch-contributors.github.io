@@ -9,7 +9,9 @@
       <NuxtLink to="/contributors">Contributors</NuxtLink>
     </div>
     <div class="nav-item">
-      <a href="https://scratch.mit.edu/studios/26371714" target="_blank">Scratch Studio</a>
+      <a href="https://scratch.mit.edu/studios/26371714" target="_blank"
+        >Scratch Studio</a
+      >
     </div>
   </div>
 </template>
@@ -19,7 +21,13 @@ export default {};
 </script>
 
 <style scoped>
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   color: black;
   text-decoration: none;
 }
@@ -36,7 +44,8 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 20px 5px 5px 10px;
 }
 
-.nav-item NuxtLink, .nav-item a {
+.nav-item NuxtLink,
+.nav-item a {
   color: white;
   text-decoration: none;
   text-weight: bold;
@@ -56,13 +65,15 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.nav-item:not(.logo) NuxtLink, .nav-item:not(.logo) a :hover {
+.nav-item:not(.logo) NuxtLink,
+.nav-item:not(.logo) a :hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.nav-item a, .nav-item NuxtLink { 
+.nav-item a,
+.nav-item NuxtLink {
   padding: 43px 16px;
-  transition-duration: 0.1s; 
+  transition-duration: 0.1s;
 }
 
 .nav .nav-item.logo {
@@ -82,13 +93,17 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #4588e5;
 }
 
-.nav .nav-item.logo {width: 64px; height: 64px; margin-left: -16px;}
+.nav .nav-item.logo {
+  width: 64px;
+  height: 64px;
+  margin-left: -16px;
+}
 
 .nav .nav-item {
-  transition-duration: 0.1s; 
+  transition-duration: 0.1s;
 }
 
 .nav .nav-item * {
-  transition-duration: 0.1s; 
+  transition-duration: 0.1s;
 }
 </style>
