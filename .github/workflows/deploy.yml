@@ -37,7 +37,7 @@ jobs:
            if: github.repository_owner == 'scratch-contributors'
            uses: peaceiris/actions-gh-pages@v3
            with:
-              personal_token: ${{ secrets.GH_PAT }}
+              github_token: ${{ secrets.GITHUB_TOKEN }}
               publish_dir: ./src/dist
               user_name: 'scratchcontributors-bot'
               user_email: 'scratchcontributors-bot@users.noreply.github.com'
