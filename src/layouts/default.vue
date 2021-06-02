@@ -19,7 +19,7 @@
   --background: #111111;
   --sidebar-background: #787474;
   --sidebar-border: #817a7a;
-  --brand: #657995;
+  --brand: #4d97ff;
   --text: white;
 }
 
