@@ -189,5 +189,63 @@ export default {
       ], // ⏫ is the list of curators. You shouldn't be touching stuff after this unless you know what you're doing
     };
   },
+  async fetch() {
+    // This fetches all the curators & managers who hasn't been added
+    async function getPage(type, page = 1) {
+      let res = await fetch(`https://studio-json.vercel.app/api/${type}?studio=26371714&page=${page}`) // Temporarily using @FunctionalMetatable's API until new studio api comes out
+      
+      return res.json()
+    }
+    
+    let curatorsWithBios = this.curators.map(user => user.name)
+    let managersWithBios = this.managers.map(user => user.name)
+    let membersWithBios = managersWithBios.concat(curatorsWithBios)
+    
+    var i = 0;
+    let managerOrder = []
+    while (true) {
+      let page = await getPage("managers", i)
+      
+      for (let j=0; j<page.length;j++) {
+        let man = page[j];
+        
+        managerOrder.push(man);
+        if (!membersWithBios.includes(man)) {
+          this.managers.push({ name: man, bio: "No biography provided." })
+        }
+      }
+      if (page == []) break
+      
+      if (page.length < 60) break
+      i++
+    }
+    
+    i = 0;
+    let curatorOrder = []
+    while (true) {
+      let page = await getPage("curators", i)
+      
+      for (let j=0; j<page.length;j++) {
+        let cur = page[j];
+        
+        curatorOrder.push(man);
+        if (!membersWithBios.includes(cur)) {
+          this.curators.push({ name: cur, bio: "No biography provided." })
+        }
+      }
+      if (page == []) break
+      
+      if (page.length < 60) break
+      i++
+    }
+    
+    this.managers.sort((a, b) => {
+      return (managerOrder.indexOf(a.name) < managerOrder.indexOf(b.name)) ? -1 : 1
+    })
+    
+    this.curators.sort((a, b) => {
+      return (curatorOrder.indexOf(a.name) < curatorOrder.indexOf(b.name)) ? -1 : 1
+    })
+  }
 };
 </script>
