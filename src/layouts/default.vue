@@ -41,7 +41,7 @@ body {
 }
 
 .margined {
-  margin-left: 22.5px;
+  margin: 22.5px;
 }
 
 * {
