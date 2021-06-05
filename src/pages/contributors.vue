@@ -190,6 +190,6 @@ export default {
         },
       ], // ⏫ is the list of curators. You shouldn't be touching stuff after this unless you know what you're doing
     };
-  }
+  },
 };
 </script>
