@@ -23,6 +23,14 @@
   --text: white;
 }
 
+.ocular-mode {
+  --brand: #0fbd8c;
+  --background: white;
+  --sidebar-background: #f2f2f2;
+  --sidebar-border: #e0e0e0;
+  --text: #575e75;
+}
+
 html,
 body {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
