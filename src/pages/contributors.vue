@@ -18,10 +18,12 @@
       <h3>Curators</h3>
       <div>
         <div v-for="curator in curators" :key="curator.name">
-          <br />
-          <User :user="curator.name" :bio="curator.bio" />
-          <br />
-          <hr />
+          <div>
+            <User :user="curator.name" :bio="curator.bio" />
+            <br />
+            <br />
+            <hr />
+          </div>
         </div>
       </div>
     </div>

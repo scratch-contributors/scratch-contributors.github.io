@@ -59,6 +59,9 @@ export default {
 
 <style scoped>
 .container {
+  width: 942px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
 }
 .wrap {
@@ -153,5 +156,13 @@ export default {
 
 .date {
   color: white;
+}
+
+@media only screen and (max-width: 1050px) {
+  .container {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 </style>
