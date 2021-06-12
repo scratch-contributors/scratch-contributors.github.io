@@ -17,7 +17,13 @@
           {{ bio }}
         </div>
         <div class="footer">
-          <p><a :href="`https://ocular.jeffalo.net/user/${username}`">ocular</a> | <a :href="`https://postpercent.rirurin.com/users/${username}`">postpercent</a></p>
+          <p>
+            <a :href="`https://ocular.jeffalo.net/user/${username}`">ocular</a>
+            |
+            <a :href="`https://postpercent.rirurin.com/users/${username}`"
+              >postpercent</a
+            >
+          </p>
         </div>
       </section>
       <nav class="left-nav">
