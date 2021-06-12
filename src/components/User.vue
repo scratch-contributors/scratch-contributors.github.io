@@ -16,7 +16,9 @@
         <div class="content">
           {{ bio }}
         </div>
-        <div class="footer"></div>
+        <div class="footer">
+          <p><a :href="`https://ocular.jeffalo.net/user/${username}`">ocular</a> | <a :href="`https://postpercent.rirurin.com/users/${username}`">postpercent</a></p>
+        </div>
       </section>
       <nav class="left-nav">
         <a
@@ -101,10 +103,12 @@ export default {
 .footer {
   line-height: 28px;
   padding-top: 2em;
+  padding-right: 15px;
   align-self: flex-end;
   text-align: right;
   display: block;
   width: 100%;
+  color: var(--text);
 }
 
 .header {
