@@ -23,6 +23,12 @@
             <a :href="`https://postpercent.rirurin.com/users/${username}`"
               >postpercent</a
             >
+            |
+            <a :href="`https://magnifier.potatophant.net/users/${username}`"
+              >Magnifier</a
+            >
+            |
+            <a :href="`https://scratory.vercel.app/user/${username}`">scratory</a>
           </p>
         </div>
       </section>
