@@ -28,7 +28,9 @@
               >Magnifier</a
             >
             |
-            <a :href="`https://scratory.vercel.app/user/${username}`">scratory</a>
+            <a :href="`https://scratory.vercel.app/user/${username}`"
+              >scratory</a
+            >
           </p>
         </div>
       </section>
