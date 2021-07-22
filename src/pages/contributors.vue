@@ -173,8 +173,8 @@ export default {
           bio: "Hello! I'm Coco7nut, currently, I only contribute one place is Scratch Wiki. I love contributing because I want to help people and to tutorials. I know Python, C++, HTML, CSS, a little Java, and some Ruby. My favorite game engine is Unity. I like playing with Micro::Bit and Arduino. My browser / operating system: Windows NT 10.0, Chrome 90.0.4430.212, No Flash version detected. My favorite food is fish. My friend is @Renzejr although he's not active much. I have an account in telehack.com but Forbin and Wumpus always ban me ( They are the creator of telehack ).\n\nP/S: I love kumquats and they don't hack my account\n",
         },
         {
-          name: "PUNNAMOODU",
-          bio: "Hi there! I am Punnamoodu! I have been on scratch for 3 years now - but only recently did I start to become active as a Scratch contributor. I am active on the forums, the SDS, and the English Scratch Wiki. ",
+          name: "BarelySmooth",
+          bio: "Hi there! I am BarelySmooth! I have been on scratch for 3 years now - but only recently did I start to become active as a Scratch contributor. I am active on the forums, the SDS, and the English Scratch Wiki. ",
         },
         {
           name: "P0tat0_Spy",
