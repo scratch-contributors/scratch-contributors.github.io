@@ -13,6 +13,6 @@
     "nuxt": "^3.5.3"
   },
   "devDependencies": {
-    "@nuxtjs/color-mode": "^3.2.0"
+    "@nuxtjs/color-mode": "^3.3.0"
   }
 }
