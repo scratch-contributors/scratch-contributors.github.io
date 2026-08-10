@@ -9,7 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "core-js": "^3.49.0",
+    "core-js": "^3.50.0",
     "nuxt": "^4.5.1"
   },
   "devDependencies": {
