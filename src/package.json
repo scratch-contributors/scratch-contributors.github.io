@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "core-js": "^3.50.0",
-    "nuxt": "^4.6.1"
+    "nuxt": "^4.6.2"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^4.0.1"
